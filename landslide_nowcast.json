@@ -1,0 +1,58 @@
+{
+    "type": "Collection",
+    "id": "nrt_landslide_nowcast",
+    "stac_version": "1.0.0",
+    "description": "<div style='text-align:Left;'><div><p><span style='font-weight:bold;'>Background: </span><span>The global Landslide Hazard Assessment for Situational Awareness (LHASA) model is developed to provide situational awareness of landslide hazards for a wide range of users. Precipitation is a common trigger of landslides. The Integrated Multi-satellitE Retrievals for GPM (IMERG) data shows recent precipitation, updated every thirty minutes. A LHASA landslide \u201cnowcast\u201d is created by comparing GPM data from the last seven days to the long-term precipitation record provided by the Tropical Rainfall Measuring Mission (TRMM) Multi-satellite Precipitation Analysis (TMPA). Because IMERG data is only available starting in 2014, the record of historical rainfall was established by TMPA, comparing 2001-present. The TMPA rainfall probability distributions were then compared to that of IMERG and the rainfall thresholds were adjusted so that the IMERG data more closely mapped to those of the TMPA archive. The past 7 days of rainfall are considered, with each day is weighted according to their date before present, with the last twenty-four hours having the most impact.</span></p><p><span style='font-weight:bold;'>Data Visualization: </span><span>Landslide Nowcast is shown using a Two Color Ramp (yellow and red). Values represent Moderate (yellow) and High (red) risk of potential landslide.</span></p><p><span style='font-weight:bold;'>Update Frequency: </span><span>3 Hour latency Suggested Usage: In places where precipitation is unusually high, the susceptibility of the terrain is evaluated, which includes quantitative information on if: roads have been built; trees have been cut down or burned; a major tectonic fault is nearby; the local bedrock is weak; the hillsides are steep.</span></p><p><span style='font-weight:bold;'>Further Reference: </span></p><p><a href='https://pmm.nasa.gov/applications/global-landslide-model'><span>Learn more about Global Landslide Model </span></a></p><p><a href='https://pmm.nasa.gov/gpm/science-objectives'><span>Learn more about GPM's science objectives. </span></a></p><p><a href='https://www.nasa.gov/mission_pages/GPM/applications/index.html'><span>Learn more about GPM's applications.</span></a></p></div></div>",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/NRT/landslide_nowcast/ImageServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "landslide_nowcast",
+                "landslide_nowcast:Landslide_Nowcast_Index",
+                "landslide_nowcast:None"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/NRT/landslide_nowcast/ImageServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json",
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json"
+    ],
+    "cube:variables": {},
+    "cube:dimensions": {},
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "title": "NRT/landslide_nowcast",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -20037507.067161847,
+                    -30240971.45838615,
+                    20037507.842788246,
+                    30240971.45838615
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-06T08:30:00Z",
+                    "2025-02-13T02:30:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}
