@@ -1,0 +1,74 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_planet",
+    "stac_version": "1.0.0",
+    "description": "NOTE: Due to the higher resolution of this data, it may be slow to load or require the user to zoom to a smaller area of interest.Date of Images:Pre-Event: 1/6Post-Event: 1/9, 1/12, 1/13, 1/14, 1/15Date of Next Image:UnknownSummary:The True Color RGB composite provides a product of how the surface would look to the naked eye from space. The RGB is created using the red, green, and blue channels of the respective instrument.Suggested Use:The True Color RGB provides a product of how the surface would look to the naked eye from space and may show damage caused by severe weather. The True Color RGB is produced using the 3 visible wavelength bands (red, green, and blue) from the respective sensor. Some minor atmospheric corrections have occurred.Satellite/Sensor:PlanetScopeResolution:3 MetersEsri REST Endpoint:See URL section on right side of pageWMS Endpoint:https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/planet/MapServer/WMSServer",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/planet/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "Image",
+                "Footprint",
+                "Boundary",
+                "Image",
+                "Footprint",
+                "Boundary",
+                "Image",
+                "Footprint",
+                "Boundary",
+                "Image",
+                "Footprint",
+                "Boundary",
+                "Image",
+                "Footprint",
+                "Boundary",
+                "Image",
+                "Footprint",
+                "Boundary",
+                "Image",
+                "Footprint",
+                "Boundary"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/planet/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/planet",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.93145808927814,
+                    33.536593083499575,
+                    -117.56039031298516,
+                    34.624775310571366
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

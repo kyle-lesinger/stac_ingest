@@ -1,0 +1,56 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_palisades_binary_burn",
+    "stac_version": "1.0.0",
+    "description": "Date of Image(s): Pre-fire images taken on 12/01/24, 12/06/24, 12/18/24, and 12/26/24. Post-fire images taken on 1/10/25 and 1/12/25.Date of Next Image:Another iteration of this product can be made available following additional suitable Sentinel-2 overpasses of the area.Summary:This is a binary burned area product that identifies areas that burned during a fire and has a spatial resolution of 20m. The product was developed using data from Sentinel-2 and VIIRS. For Sentinel-2, we compute the 75th percentile of the relative difference normalized burn ratio index (RdNBR) using Sentinel-2 NIR (8a) and SWIR (12) bands following Miller and Thode, 2006. Burn severity is classified into high, moderate, low, and unchanged based on the computed RdNBR. For VIIRS, we aggregate all active fire detections within the area of interest and apply a 375m buffer around the center of each active fire detection. To be counted as burned in our binary burned area product, a 20-m grid cell must have either an RdNBR of moderate or high, or it must have an RdNBR of low and fall inside of a VIIRS active fire detection.Suggested Usage:The product is a given as a shapefile where all points inside the polygons are considered burned and all points outside the polygons are considered unburned.Satellite/Sensor:Sentinel-2 and VIIRSResolution: 20 metersCredits:E.B. Wiggins, E.M. Gargulinski, and N. Rosenthal NASA LaRC and Kettle Reinsurance CompanyContact: Elizabeth.b.wiggins@nasa.govEsri REST Endpoint:See URL section on right side of pageWMS Endpoint:https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/Palisades_Binary_Burn/MapServer/WMSServerData Download:https://maps.disasters.nasa.gov/download/gis_products/event_specific/2025/california_wildfires_202501/viirs_sentinel2_binaryburn/",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/Palisades_Binary_Burn/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "Palisades_Binary_Burn",
+                "Palisades_Final_trimmed",
+                "Eaton_Final_trimmed"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/Palisades_Binary_Burn/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/Palisades_Binary_Burn",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.68864927295077,
+                    34.027104984111986,
+                    -118.01005457228781,
+                    34.25167456328431
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

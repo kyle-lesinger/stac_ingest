@@ -1,0 +1,78 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_feds",
+    "stac_version": "1.0.0",
+    "description": "Dates:01/04/2025 - 01/19/2025Summary:The Fire Event Data Suite, or FEDS, algorithm uses high resolution VIIRS observations to map fire perimeters, identify the active portion of fire fronts, and track the progression and attributes of individual fires every 12 hours. For individual fire events, FEDS contains information on the latest active fire detections, as well as the total fire event history in 12 hour increments. The vector output from the FEDS algorithm is produced within approximately 4 hours following the availability of VIIRS 375 m active fire data in FIRMS. The FEDS algorithm was originally developed and tested for large fires in California (Chen et al., (2022)). The EIS Fire team has scaled the production of the fire event tracking approach to cover CONUS and Canada, with data available via OGC API. Data for additional regions, including Alaska and Hawaii, will be released through FIRMS when available.Information on this data and FIRMS can be found\u00a0here.Suggested Usage:Perimeter data are helpful for understanding the time series progression of a fire event, as observed via the VIIRS sensor. Given the source data, the same considerations that must be taken for FIRMS active fire data are applicable here. All data are experimental and should always be verified with supplementary sources of information when available.The VIIRS Modeled Fire Perimeter Data product provides situational awareness for large fire events in CONUS and Canada every 12 hours, based on the FEDS algorithm and available 375 m VIIRS active fire detection data from Suomi-NPP and NOAA-20. The modeled perimeter is an estimate of the fire-affected area, active portion of the fire perimeter, and metrics of fire behavior. The VIIRS Modeled Fire Perimeter data also provides a history of modeled large fire growth every 12 hours for all fire events detected by VIIRS in CONUS and Canada. By contrast, the USA Fire Perimeter layer is the most recent official incident perimeter data. Official incident data provide a more precise estimate of the perimeter of large fire events in the US than the VIIRS Modeled Fire Perimeter data. The USA Fire Perimeter layer is updated periodically with new official incident perimeter data.Date of Next Image:Updates available at approximate 12-hour intervals.Satellite/Sensor:Suomi NPP and NOAA-20 satellites carrying the VIIRS sensor. The FEDS algorithm uses the locations and sizes of each pixel to derive perimeter information and track individual fire events.Resolution:375m at nadirCredits:NASA Earth Information System (EIS)Doug Morton, Melanie Follette-Cook, Elijah Orland, Tempest McCabe (all GSFC), Yang Chen (UC Irvine)Scientific PaperEsri REST Endpoint:See URL section on right side of page",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/FEDS/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "FEDS Perimeter Data (up to 1/20)",
+                "FEDS Pixel Data (up to 1/20)"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/FEDS/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "day",
+    "title": "california_wildfires_202501/FEDS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.69069500716881,
+                    34.02483981230756,
+                    -118.01421469385298,
+                    34.34280585330754
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-01-01T00:00:00Z",
+                    "2025-01-20T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable",
+    "summaries": {
+        "datetime": [
+            "2025-01-01T00:00:00Z",
+            "2025-01-02T00:00:00Z",
+            "2025-01-03T00:00:00Z",
+            "2025-01-04T00:00:00Z",
+            "2025-01-05T00:00:00Z",
+            "2025-01-06T00:00:00Z",
+            "2025-01-07T00:00:00Z",
+            "2025-01-08T00:00:00Z",
+            "2025-01-09T00:00:00Z",
+            "2025-01-10T00:00:00Z",
+            "2025-01-11T00:00:00Z",
+            "2025-01-12T00:00:00Z",
+            "2025-01-13T00:00:00Z",
+            "2025-01-14T00:00:00Z",
+            "2025-01-15T00:00:00Z",
+            "2025-01-16T00:00:00Z",
+            "2025-01-17T00:00:00Z",
+            "2025-01-18T00:00:00Z",
+            "2025-01-19T00:00:00Z",
+            "2025-01-20T00:00:00Z"
+        ]
+    }
+}

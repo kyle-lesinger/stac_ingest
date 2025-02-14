@@ -1,0 +1,55 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_ecostress",
+    "stac_version": "1.0.0",
+    "description": "Date of Images:01/07/2025, 01/10/2025Summary:Land surface temperature is the heat you would feel as you touch the ground, rooftop, or other surface. Certain materials retain more heat than others \u2013 for instance, beach sand is warmer than vegetated regions. Very recently burned areas will maintain some residual heat, and active fires will have very high heat signatures. Water holds onto heat for longer than land, so the ocean is warmer than the land at night and cooler than the land during the day.The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally as well as key biomes and agricultural zones around the world and selected FLUXNET validation sites. A map of the acquisition coverage can be found on the ECOSTRESS website.The ECO2LSTE Version 2 data product provides atmospherically corrected land surface temperature and emissivity (LST&amp;E) values derived from five thermal infrared (TIR) bands. The ECO2LSTE data product was derived using a physics-based Temperature and Emissivity Separation (TES) algorithm.Satellite/Sensor:ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) on the International Space Station (ISS)Resolution:70 metersCredits:NASA/Jet Propulsion Laboratory, California Institute of Technology , International Space Station (ISS)For More Information:ECOSTRESS Project at JPL: https://ecostress.jpl.nasa.gov/Hook, S., Hulley, G. (2019). ECOSTRESS Land Surface Temperature and Emissivity Daily L2 Global 70 m V001 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center. Accessed 2023-08-15 from https://doi.org/10.5067/ECOSTRESS/ECO2LSTE.001Esri REST Endpoint:See URL Section on right side of pageWMS Endpoint:Data Download:",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/ECOSTRESS/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "ECOSTRESS - January 10, 2025",
+                "ECOSTRESS - January 7, 2025"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/ECOSTRESS/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/ECOSTRESS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.79052763752169,
+                    33.92325262939249,
+                    -117.83739976158152,
+                    34.405625697010635
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

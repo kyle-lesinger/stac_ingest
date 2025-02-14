@@ -1,0 +1,59 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_s1_dmgassessment",
+    "stac_version": "1.0.0",
+    "description": "Date of Image(s):21 Jan 2025Date of Next Image:UnknownSummary:Likely Damaged AreasThis raster dataset (TIF) represents likely damaged/destroyed urban areas in Los Angeles, California, during the fires of January 2025. The map is the result of a coherent change detection analysis of interferometric Sentinel-1 radar (InSAR) images from January 2025 in comparison with pre-disaster reference images from 2022-2025.\u00a0Coherent change detection analysis is used to show change across the entire domain, which includes vegetation and forested areas. This analysis is constrained to a snapshot of the FIRIS perimeter domain to highlight the damage to built up areas only.Potentially damaged areas denoted in orange represent data collected on January 9, 2025 from a Sentinel-1 pass over the Altadena/Eaton area. Potentially damaged areas denoted in red represent data collected on January 14, 2025 from a Sentinel-1 pass over the Palisades area.Likely damaged structuresThis vector dataset (GeoJSON) represents likely damaged/destroyed structures in Los Angeles, California, during the fires of January 2025. The underlying map of damage is the result of a coherent change detection analysis of interferometric Sentinel-1 radar (InSAR) images from January 2025 in comparison with pre-disaster reference images from 2022-2025. The InSAR-derived damage map was cross-referenced with a pre-disaster building footprint dataset (the USA Buildings dataset from Oak Ridge National Lab). Building footprints that were 1) within the fire perimeter based on CA Perimeters NIFC FIRIS data and 2) at least 99% covered by the fire damage map were labeled damaged/destroyed.Potentially damaged structures denoted in red represent data collected on January 21, 2025.Date(s) and time(s) covered: Swaths from 9 January 2025, 14 January 2025, and January 21, 2025, with 188 images collected from 2022-12-20 to 2025-01-02 for a pre-disaster reference dataset.Suggested UsageThe map is meant for landscape-level geospatial overlay and visualization purposes of fire damage in urban/built-up regions. For example, the map is useful for tabulating estimates of the number of likely damaged or destroyed structures. Pixel values of 1 represent a region likely damaged or destroyed; pixel values of 0 represent all other regions.Building footprints are based on analysis of very-high resolution satellite imagery taken over many years, are not current as of the fire, and are likely incomplete. There are no measures of damage severity at the building-level; only a binary indicator of likely damage/destruction. Regions that changed over the course of the reference period or were otherwise dynamic (such as places of construction or destruction or vegetated areas) are likely excluded from the analysis.Satellite/Sensor:European Space Agency Copernicus Sentinel-1/10 meter spatial resolution processed to 40 meters for interferometric coherence change analysisResolution:40 metersCredits:Damage analysis of Copernicus Sentinel-1 satellite data by Corey Scher of CUNY Graduate Center and Jamon Van Den Hoek of Oregon State University. Contact: Jamon Van Den Hoek (jamon.vandenhoek@oregonstate.edu). Data sources: Sentinel-1\u00a0https://asf.alaska.edu/datasets/daac/sentinel-1/Alaska Satellite Facility\u00a0https://hyp3-docs.asf.alaska.edu/usage_guidelines/USA Buildings (Oak Ridge National Lab;\u00a0https://gee-community-catalog.org/projects/usa_structures/)CA Perimeters NIFC FIRIS data (gis.data.cnra.ca.gov/datasets/CALFIRE-Forestry::ca-perimeters-nifc-firis-public-view/)Access and Use Constraints: Likely Damaged Areas: The damage map has not been field-validated and omission/commission errors are likely present. Regions that changed over the course of the reference period or were otherwise dynamic (such as places of construction or destruction or vegetated areas) are likely excluded from the analysis.Likely Damaged Structures: Building footprints are based on analysis of very-high resolution satellite imagery taken over many years, are not current as of the fire, and are likely incomplete. There are no measures of damage severity at the building-level; only a binary indicator of likely damage/destruction. The damage map has not been field-validated and omission/commission errors are likely present. Regions that changed over the course of the reference period or were otherwise dynamic (such as places of construction or destruction or vegetated areas) are likely excluded from the analysis.REST EndpointAvailable at the URL to the right.WMS Endpointhttps://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/s1_DmgAssessment/MapServer/WMSServer",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/s1_DmgAssessment/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "Areas",
+                "Structures",
+                "Areas",
+                "Structures",
+                "Structures",
+                "Areas"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/s1_DmgAssessment/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/s1_DmgAssessment",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.27614746870817,
+                    33.556387775227904,
+                    -117.56467718940367,
+                    34.76911340878925
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

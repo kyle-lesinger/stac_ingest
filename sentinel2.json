@@ -1,0 +1,60 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_sentinel2",
+    "stac_version": "1.0.0",
+    "description": "Dates of Images:Post-Event: January 12, 2025Pre-Event: December 18, 2024Date of Next Image:UnknownSummary:The True Color RGB composite provides a product of how the surface would look to the naked eye from space. The RGB is created using the red, green, and blue channels of the respective instrument.The Short Wave Infrared (SWIR) RGB is a product that is created using the SWIR, NIR, and Red channels of the respective instrument.The Color Infrared composite is created using the near-infrared, red, and green channels, allowing for the ability to see areas impacted from the storm. The near-infrared gives the ability to see through thin clouds. Healthy vegetation is shown as red, water is in blue.The Normalized Burn Ratio identifies burned areas using\u00a0this calculation. Darker areas are potentially burned areas.Suggested Use:The True Color RGB provides a product of how the surface would look to the naked eye from space. The True Color RGB is produced using the 3 visible wavelength bands (red, green, and blue) from the respective sensor. Some minor atmospheric corrections have occurred.The Short Wave Infrared (SWIR) RGB is a product that can provides value in flood detection. Areas of water will appear blue, healthy green vegetation will appear as a bright green, urban areas in various shades of magenta, snow will appear as a bright blue/cyan, and bare soils being multicolor dependent on their makeup. Compare pre-event imagery to post-event imagery to identify potential flooding.A Color Infrared composite depicts healthy vegetation as red, water as blue. Some minor atmospheric corrections have occurred.Darker Areas are potentially burned in the NBR product.Satellite/Sensor:MultiSpectral Instrument (MSI) on European Space Agency's (ESA) Copernicus Sentinel-2A/2B satellitesResolution:10 metersCredits:NASA/MSFC, USGS, ESA CopernicusEsri REST Endpoint:See URL section on right side of pageWMS Endpoint:https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/sentinel2/MapServer/WMSServerData Download:https://maps.disasters.nasa.gov/download/gis_products/event_specific/2025/california_wildfires_202501/sentinel2/",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/sentinel2/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "Color Infrared",
+                "Shortwave Infrared",
+                "True Color",
+                "Color Infrared",
+                "Normalized Burn Ratio",
+                "Shortwave Infrared",
+                "True Color"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/sentinel2/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/sentinel2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.14886713657708,
+                    33.33276710714378,
+                    -116.89272491153032,
+                    35.24303017053707
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

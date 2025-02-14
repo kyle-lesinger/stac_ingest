@@ -1,0 +1,57 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_hls",
+    "stac_version": "1.0.0",
+    "description": "Researchers working with the Global Land Analysis &amp; Discovery (GLAD) at University of Maryland, College Park, Maryland and Advanced Rapid Imaging and Analysis (ARIA) and Observational Products for End-Users from Remote Sensing Analysis (OPERA) teams at  NASA's Jet Propulsion Laboratory, Pasadena, California, created maps of surface disturbance due to ongoing wildfires in Los Angeles County in January 2025 using the OPERA Disturbance Alert from Harmonized Landsat Sentinel-2 (DIST-ALERT-HLS) products. The results posted here are preliminary results, primarily intended to aid the field response and people who wanted to have a rough first look at the area impacted by wildfire. The ARIA-share website has always focused on posting preliminary results as fast as possible for urgent response.  All information is provisional for use under emergency response guidelines. These data are provided with absolutely no warranty of any kind.  Use at your own risk.OPERA DIST-ALERT-HLSThe Disturbance product (DIST) maps per pixel vegetation disturbance (specifically, vegetation cover loss) from the Harmonized Landsat Sentinel-2 (HLS) scenes. We provide the (1) maximum vegetation anomaly value (VEG-ANOM-MAX) layer and (2) vegetation disturbance status (VEG-DIST-STATUS). All provided layers have been filtered to include only disturbance detected following the start of the Greater Los Angeles wildfires (starting Jan. 7, 2025). Images are provided from January 12, 2025. The images are provided as GeoTIFF files. VEG-ANOM-MAX:Difference between historical and current year observed vegetation cover at the date of maximum decrease (vegetation loss of 0-100%). This layer can be used to threshold vegetation disturbance per a given sensitivity (e.g. disturbance of \u00e2\u2030\u00a520% vegetation cover loss). The sum of the historical percent vegetation and the anomaly value will be the vegetation cover estimate for the current year.  VEG-DIST-STATUS:Indication of vegetation cover loss (vegetation disturbance). The status label is based on the maximum anomaly value, confidence level, and whether it is ongoing or finished. \u00e2\u20ac\u0153First\u00e2\u20ac means the pixel has had an anomaly detection but no subsequent observations whether anomalous or not. ''Provisional'' means there have been two consecutive disturbance detections but not yet with high confidence. ''Confirmed'' means that vegetation disturbance is detected with high confidence. The label ''finished'' is applied to confirmed disturbances that have had two consecutive no-anomaly observations or one 15 days or more after the last anomaly detection. If a new disturbance is detected, it will overwrite those in a ''finished'' state. These labels are reported for both above and below the 50% disturbance threshold based on the maximum anomaly value.Satellite/Sensor:MultiSpectral Instrument (MSI) on European Space Agency's (ESA) Copernicus Sentinel-2A/B satellites and Operational Land Imager 2 (OLI-2) on NASA\u00e2\u20ac\u2122s Landsat 8/9 satellite.Resolution:30 metersThe DIST-ALERT-HLS products included here have these flags:255 represents ''No Data'' and is based on the Fmask layer of the source HLS granule.  OPERA DIST-ALERT-HLS data availability:The post-processed products are available to download at https://aria-share.jpl.nasa.gov/20250113-GreaterLosAngeles_Fires/DIST-HLS/The OPERA DIST-HLS products have been in production since January 2022, are freely distributed to the public via NASA's Land Processes Distributed Active Archive Center (LP DAAC), and can be downloaded through NASA's Earthdata search. For more information about the Surface Disturbance product suite, please refer to the DIST Product page: https://www.jpl.nasa.gov/go/opera/products/dist-product-suite/For more information about the GLAD project, visit https://glad.umd.edu/For more information about the Caltech-JPL ARIA project, visit https://aria.jpl.nasa.gov For more information about the JPL OPERA project, visit https://www.jpl.nasa.gov/go/opera/ Suggested Use for DIST-HLS:VEG-DIST-STATUS:Layer values:0: No disturbance (suggested color: #121212)1: first &lt;50% (suggested color: #005555)2: provisional &lt;50% (suggested color: #897f4e)3: confirmed &lt;50% (suggested color: #dee043)4: first &gt;=50% (suggested color: #008888)5: provisional &gt;=50% (suggested color: #e48727)6: confirmed &gt;=50% (suggested color: #e01b07)7: confirmed &lt;50%, finished (suggested color: #777777)8: confirmed &gt;=50%, finished (suggested color: #dddddd)255: No data (suggested color: transparent)VEG-ANOM-MAXLayer values:0-100: Maximum loss of percent vegetation (suggested color: white to red gradient)255: No data (suggested color: transparent)Product POCs:Alexander L. Handwerger (alexander.handwerger@jpl.nasa.gov)Zhen Song (zhensong@umd.edu)Matt Hansen (mhansen@umd.edu) Steven Chan (steventsz.k.chan@jpl.nasa.gov)David Bekaert (david.bekaert@jpl.nasa.gov)Credits:The product contains modified Copernicus Sentinel data (2024) and is produced as part of the OPERA project, which is funded by NASA to address remote sensing needs identified by the Satellite Needs Working Group. Managed by NASA's Jet Propulsion Laboratory, OPERA funds and manages the DIST-ALERT-HLS product developed and produced by the Global Land Analysis and Discovery (GLAD) laboratory at the University of Maryland.NASA JPL-Caltech-UMD ARIA/OPERA Team==================Files:OPERA-DIST-ALERT-HLS-VEG-ANOM-MAX_20250112.tif: January 12, 2025 showing the maximum vegetation anomaly.OPERA-DIST-ALERT-HLS-VEG-DIST-STATUS_20250112.tif: January 12, 2025 showing the status anomaly.Last Update 14 January 2025",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/HLS/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "Vegetation cover loss indicator (VEG_DIST_STATUS)",
+                "Historical vs current year vegetation loss maximum (VEG_ANOM_MAX)",
+                "Vegetation cover loss indicator (VEG_DIST_STATUS)",
+                "Historical vs current year vegetation loss maximum (VEG_ANOM_MAX)"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/HLS/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/HLS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.14886713657708,
+                    33.33276710714378,
+                    -117.98062243292767,
+                    34.33773660758858
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

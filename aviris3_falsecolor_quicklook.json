@@ -1,0 +1,64 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_aviris3_falsecolor_quicklook",
+    "stac_version": "1.0.0",
+    "description": "Date of Image(s) 1/10/25; UTC: 2231091/10/25; UTC: 222449Date of Next Image 1/11/25, 1/14/25Summary: The images are false-color \u201cquick looks\u201d generated from the NASA AVIRIS-3 (Airborne Visible/Infrared Imaging Spectrometer -3). They are generated from un-atmospherically-corrected, at-sensor radiance data. Specifcially: AVIRIS 3 L1B calibrated spectral radiance (units: uW nm-1 cm-2 sr-1). The images have been orthorectified.Given that these images were derived from solely calibrated, at-sensor radiance data, they have not undergone atmospheric correction and do not quantitatively represent surface reflectance. Atmospherically-corrected surface reflectance products will be shared separately when they become available. Suggested Usage: Despite the rawer form of this quick-look product, it is still useful for burned area mapping. Sensor:Airborne Visible/Infrared Imaging Spectrometer 3rd-Generation (AVIRIS-3)AV320250110t223109 Resolution: 3.70 x 3.70 m pixelsDimensions for AV320250110t223109: X: 6210 Y: 3068 Bands: 3AV320250110t222449 Resolution: 3.40 x 3.40 m pixelsDimensions for AV320250110t222449: X: 6593 Y: 3465 Bands: 3The AVIRIS-3 False color RGB wavelengths are 1660nm, 560nm, and 850nm for (R, G, B) respectively)CreditsRob Green (JPL), Phil Brodrick (JPL), David Thompson (JPL), John Chapman (JPL)",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/aviris3_falsecolor_quicklook/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "2025-01-11T19_46_16Z-to-2025-01-11T19_52_10Z.tif",
+                "2025-01-11T20_42_30Z-to-2025-01-11T20_48_53Z.tif",
+                "2025-01-11T19_59_28Z-to-2025-01-11T20_27_32Z.tif",
+                "2025-01-11T20_56_19Z-to-2025-01-11T21_19_29Z.tif",
+                "2025-01-16T19_15_22Z-to-2025-01-16T19_38_40Z.tif",
+                "2025-01-16T19_04_42Z-to-2025-01-16T19_04_42Z.tif",
+                "2025-01-16T18_53_55Z-to-2025-01-16T18_53_55Z.tif",
+                "2025-01-16T19_00_58Z-to-2025-01-16T19_00_58Z.tif",
+                "2025-01-16T19_47_10Z-to-2025-01-16T19_47_10Z.tif",
+                "2025-01-16T19_09_28Z-to-2025-01-16T19_09_28Z.tif",
+                "2025-01-16T19_52_46Z-to-2025-01-16T20_31_28Z.tif"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/aviris3_falsecolor_quicklook/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/aviris3_falsecolor_quicklook",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.77593203063631,
+                    34.01717382385735,
+                    -117.9719792671938,
+                    34.464721023224506
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}

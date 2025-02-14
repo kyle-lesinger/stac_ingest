@@ -1,0 +1,60 @@
+{
+    "type": "Collection",
+    "id": "california_wildfires_202501_landsat",
+    "stac_version": "1.0.0",
+    "description": "Dates of Images:Post-Event: January 14, 2025Pre-Event: January 6, 2025Date of Next Image:UnknownSummary:Natural Color: The Natural Color RGB provides a false composite look at the surface. This RGB uses a shortwave, the near-infrared, and red channels from the instrument.Color Infrared: The Color Infrared composite is created using the near-infrared, red, and green channels, allowing for the ability to see areas impacted from the fires. The near-infrared gives the ability to see through thin clouds. Healthy vegetation is shown as red, water is in blue.True Color: The True Color RGB composite provides a product of how the surface would look to the naked eye from space. The RGB is created using the red, green, and blue channels of the respective instrument.Suggested Use:Natural Color: areas of water will appear blue, healthy green vegetation will appear as a bright green, urban areas in various shades of magenta.Color Infrared: depicts healthy vegetation as red, water as blue. Some minor atmospheric corrections have occurred.True Color: provides a product of how the surface would look to the naked eye from space. The True Color RGB is produced using the 3 visible wavelength bands (red, green, and blue) from the respective sensor. Some minor atmospheric corrections have occurred.Satellite/Sensor:Landsat 9 Operational Land Imager (OLI)Resolution:30 metersCredits:NASA/MSFC, USGSEsri REST Endpoint:See URL section on right side of pageWMS Endpoint:https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/Landsat/MapServer/WMSServerData Download:https://maps.disasters.nasa.gov/download/gis_products/event_specific/2025/california_wildfires_202501/landsat/",
+    "links": [
+        {
+            "rel": "wms",
+            "href": "https://maps.disasters.nasa.gov/ags03/services/california_wildfires_202501/Landsat/MapServer/WMSServer",
+            "type": "image/png",
+            "title": "Visualized through a WMS",
+            "wms:layers": [
+                "Color Infrared",
+                "Natural Color",
+                "True Color",
+                "Color Infrared",
+                "Natural Color",
+                "True Color",
+                "Normalized Burn Ratio (NBR)"
+            ],
+            "wms:styles": [
+                "default"
+            ]
+        },
+        {
+            "rel": "via",
+            "href": "https://maps.disasters.nasa.gov/ags03/rest/services/california_wildfires_202501/Landsat/MapServer",
+            "type": "text/html",
+            "title": "Parent ArcGIS server url"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/web-map-links/v1.2.0/schema.json"
+    ],
+    "dashboard:is_periodic": false,
+    "dashboard:time_density": "year",
+    "dashboard:is_timeless": true,
+    "title": "california_wildfires_202501/Landsat",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.56701805963864,
+                    33.5199805388387,
+                    -117.05508973289413,
+                    35.68141448514062
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-applicable"
+}
